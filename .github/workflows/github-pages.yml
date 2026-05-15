@@ -41,7 +41,7 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
       - name: Build
-        run: pnpm run build & cp dist/index.html dist/404.html
+        run: pnpm run build && cp dist/index.html dist/404.html
       # 建置完畢準備上傳頁面
       - name: Setup Pages
         uses: actions/configure-pages@v5
